@@ -101,7 +101,7 @@
 
   .postgrid{display:grid;grid-template-columns:320px 1fr;gap:32px;align-items:start;margin-top:30px}
   .vidwrap{border:4px solid var(--line);background:#000;box-shadow:10px 10px 0 var(--accent);line-height:0;max-width:320px}
-  .vidwrap video{display:block;width:100%;aspect-ratio:9/16;object-fit:cover}
+  .vidwrap video{display:block;width:100%;aspect-ratio:1/1;object-fit:cover}
   .postcopy p{font-weight:600;margin-bottom:16px;max-width:640px}
   .vidcap{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;opacity:.65;margin-top:12px}
   @media(max-width:760px){ .postgrid{grid-template-columns:1fr} .vidwrap{margin:0 auto} }
@@ -181,7 +181,7 @@
     <p class="sec-lede">There's no single viral moment here. It's a lot of small posts across our pages that add up to the number you paid for.</p>
     <div class="postgrid">
       <div class="vidwrap">
-        <video src="example-post.mp4" playsinline autoplay muted loop preload="metadata"></video>
+        <video src="example-post-1x1.mp4" poster="example-post-poster.jpg" playsinline autoplay muted loop preload="metadata"></video>
       </div>
       <div class="postcopy">
         <p>Each post on its own is small. A few hundred views here, a couple thousand there. It's the volume across the whole network that stacks up to your total.</p>
