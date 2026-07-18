@@ -99,6 +99,13 @@
     .cmp .them{border-right:none;border-bottom:4px solid var(--line)}
   }
 
+  .postgrid{display:grid;grid-template-columns:320px 1fr;gap:32px;align-items:start;margin-top:30px}
+  .vidwrap{border:4px solid var(--line);background:#000;box-shadow:10px 10px 0 var(--accent);line-height:0;max-width:320px}
+  .vidwrap video{display:block;width:100%;aspect-ratio:9/16;object-fit:cover}
+  .postcopy p{font-weight:600;margin-bottom:16px;max-width:640px}
+  .vidcap{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;opacity:.65;margin-top:12px}
+  @media(max-width:760px){ .postgrid{grid-template-columns:1fr} .vidwrap{margin:0 auto} }
+
   .proof{border:4px solid var(--line);background:var(--ink);color:var(--paper);padding:clamp(26px,4vw,40px);margin-top:12px}
   .proof .big{font-family:'Archivo Black';font-size:clamp(34px,7.6vw,64px);letter-spacing:-2px;line-height:1}
   .proof .big em{font-style:normal;color:var(--accent)}
@@ -122,6 +129,7 @@
     <a class="logo" href="/">SoundLift</a>
     <div class="navlinks">
       <a href="#how">How it works</a>
+      <a href="#posts">The posts</a>
       <a href="#why">Why us</a>
       <a href="#pricing">Pricing</a>
       <a href="#faq">FAQ</a>
@@ -138,10 +146,10 @@
       <span>100% organic</span><span>No bots, ever</span><span>United States audience</span><span>From $10</span>
     </div>
     <div class="tiers">
-      <div class="tier"><div class="tn">Starter</div><div class="tv">5K</div><div class="tl">listeners</div><div class="tp">$10</div></div>
-      <div class="tier hot"><div class="tn">Most popular</div><div class="tv">10K</div><div class="tl">listeners</div><div class="tp">$20</div></div>
-      <div class="tier"><div class="tn">Growth</div><div class="tv">25K</div><div class="tl">listeners</div><div class="tp">$50</div></div>
-      <div class="tier"><div class="tn">Scale</div><div class="tv">50K</div><div class="tl">listeners</div><div class="tp">$100</div></div>
+      <div class="tier"><div class="tn">Starter</div><div class="tv">5K</div><div class="tl">TikTok views</div><div class="tp">$10</div></div>
+      <div class="tier hot"><div class="tn">Most popular</div><div class="tv">10K</div><div class="tl">TikTok views</div><div class="tp">$20</div></div>
+      <div class="tier"><div class="tn">Growth</div><div class="tv">25K</div><div class="tl">TikTok views</div><div class="tp">$50</div></div>
+      <div class="tier"><div class="tn">Scale</div><div class="tv">50K</div><div class="tl">TikTok views</div><div class="tp">$100</div></div>
     </div>
     <p style="margin-top:34px"><a class="btn" href="#pricing">Start a campaign →</a></p>
   </div>
@@ -153,7 +161,7 @@
       <div class="step">
         <div class="num">1</div>
         <h3>Pick your reach</h3>
-        <p>Choose how many real people you want hearing your song, from 5,000 up to 50,000. Flat rate, no subscription.</p>
+        <p>Choose how many TikTok views you want on posts about your song, from 5,000 up to 50,000. Flat rate, no subscription.</p>
       </div>
       <div class="step">
         <div class="num">2</div>
@@ -164,6 +172,22 @@
         <div class="num">3</div>
         <h3>We run it</h3>
         <p>Our team builds the posts and pushes them across our network of TikTok music pages until you hit your number. Then we email you every post link.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="posts">
+    <h2>Small posts.<br><mark>Big total.</mark></h2>
+    <p class="sec-lede">There's no single viral moment here. It's a lot of small posts across our pages that add up to the number you paid for.</p>
+    <div class="postgrid">
+      <div class="vidwrap">
+        <video src="example-post.mp4" playsinline autoplay muted loop preload="metadata"></video>
+      </div>
+      <div class="postcopy">
+        <p>Each post on its own is small. A few hundred views here, a couple thousand there. It's the volume across the whole network that stacks up to your total.</p>
+        <p>Every post is built around your song. Your track is the sound, and the song title sits in the description. Nothing else is competing for attention, so when someone likes what they're hearing, they know exactly what to go search.</p>
+        <p>They're deliberately simple, made to feel like a real person posted them. That's what blends into the feed and actually gets the song heard instead of scrolled past.</p>
+        <p class="vidcap">↑ A real post from one of our pages</p>
       </div>
     </div>
   </section>
@@ -206,50 +230,42 @@
     <p style="margin-top:16px;font-weight:600;max-width:700px">That's also why we never touch your song on streaming. We don't add it to playlists and we don't link it anywhere. We just put the song title in the post. So every save and stream that shows up in your numbers came from a real person who heard it and went looking for it on their own.</p>
   </section>
 
-  <section id="proof">
-    <h2>It works</h2>
-    <p class="sec-lede">We ran one artist through this system for a year, posting their catalogue across our pages.</p>
-    <div class="proof">
-      <div class="big">50K <em>→</em> 194K</div>
-      <p>monthly listeners in about a year. Hundreds of posts across our TikTok music pages, all organic, zero bots. Same system you're buying, just scaled up over time.</p>
-    </div>
-  </section>
 
   <section id="pricing">
     <h2>Pick your campaign</h2>
-    <p class="sec-lede">Flat $2 per 1,000 listeners at every size. One song per campaign. If we don't deliver the reach you paid for, you get your money back.</p>
+    <p class="sec-lede">Flat $2 per 1,000 views at every size. One song per campaign. If we don't deliver the reach you paid for, you get your money back.</p>
     <div class="plans">
 
       <div class="plan">
         <div class="n">5,000</div>
-        <div class="u">listeners</div>
+        <div class="u">TikTok views about your song</div>
         <div class="p">$10</div>
-        <div class="per">$2 per 1,000</div>
+        <div class="per">$2 per 1,000 views</div>
         <div class="go"><a class="btn sm" href="https://buy.stripe.com/28E3cu9530Cc7lbdHQe7m02" target="_blank" rel="noopener">Start →</a></div>
       </div>
 
       <div class="plan hot">
         <div class="badge">Most popular</div>
         <div class="n">10,000</div>
-        <div class="u">listeners</div>
+        <div class="u">TikTok views about your song</div>
         <div class="p">$20</div>
-        <div class="per">$2 per 1,000</div>
+        <div class="per">$2 per 1,000 views</div>
         <div class="go"><a class="btn sm alt" href="https://buy.stripe.com/14A7sK1CB2Kk7lb33ce7m03" target="_blank" rel="noopener">Start →</a></div>
       </div>
 
       <div class="plan">
         <div class="n">25,000</div>
-        <div class="u">listeners</div>
+        <div class="u">TikTok views about your song</div>
         <div class="p">$50</div>
-        <div class="per">$2 per 1,000</div>
+        <div class="per">$2 per 1,000 views</div>
         <div class="go"><a class="btn sm" href="https://buy.stripe.com/4gM8wO3KJ4SsaxnfPYe7m04" target="_blank" rel="noopener">Start →</a></div>
       </div>
 
       <div class="plan">
         <div class="n">50,000</div>
-        <div class="u">listeners</div>
+        <div class="u">TikTok views about your song</div>
         <div class="p">$100</div>
-        <div class="per">$2 per 1,000</div>
+        <div class="per">$2 per 1,000 views</div>
         <div class="go"><a class="btn sm" href="https://buy.stripe.com/cNiaEW2GF84EcFv47ge7m05" target="_blank" rel="noopener">Start →</a></div>
       </div>
 
@@ -277,7 +293,7 @@
       </div>
       <div class="qa">
         <h3>Can you guarantee streams or saves?</h3>
-        <p>No, and nobody honestly can. We guarantee the reach: the number of real people who hear your song. Whether they love it and go stream it is up to the song.</p>
+        <p>No, and nobody honestly can. We guarantee the views: the number of TikTok views on posts about your song. Whether they love it and go stream it is up to the song.</p>
       </div>
       <div class="qa">
         <h3>What's your refund policy?</h3>
@@ -296,7 +312,7 @@
       <div>Questions? <a href="mailto:jaggerman068@gmail.com">jaggerman068@gmail.com</a></div>
     </div>
     <p class="fine">
-      SoundLift is a music promotion service. We post your song across our own network of TikTok music pages to put it in front of real listeners. We do not sell streams, saves, followers, or engagement, and we do not interact with your song on streaming platforms. Reach figures refer to real people who see and hear your song on our posts. Refunds: if we do not deliver the reach purchased, you receive a full refund. One song per campaign.
+      SoundLift is a music promotion service. We post your song across our own network of TikTok music pages to put it in front of real listeners. We do not sell streams, saves, followers, or engagement, and we do not interact with your song on streaming platforms. View counts refer to TikTok views on posts featuring your song, delivered across many posts rather than a single one. We do not guarantee streams, saves, or followers. Refunds: if we do not deliver the views purchased, you receive a full refund. One song per campaign.
     </p>
   </div>
 </footer>
