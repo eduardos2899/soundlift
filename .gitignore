@@ -5,3 +5,9 @@ mobile-preview.html
 jagger-site/
 outreach-log.csv
 .DS_Store
+
+# client material must never be published (public repo + GitHub Pages)
+cannibal kids/
+Clients/
+outreach-log.csv
+wonderbag testimonial/
